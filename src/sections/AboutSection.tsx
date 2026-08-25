@@ -12,7 +12,7 @@ const GROUP_3D =
   'https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png'
 
 const ABOUT_TEXT =
-  "With more than five years of experience in design, i focus on branding, web design, and user experience, i truly enjoy working with businesses that aim to stand out and present their best image. Let's build something incredible together!"
+  "I’m Trọng Chiến, with over three years of experience in marketing, passionate about building brands, creating meaningful connections, and driving business growth. I enjoy turning ideas into strategic and creative marketing solutions that help businesses stand out. Let’s build something impactful together!"
 
 export default function AboutSection() {
   return (
