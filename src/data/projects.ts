@@ -1,6 +1,9 @@
 import spaCol1Image1 from '../assets/projects/spa-col1-1.jpg'
 import spaCol1Image2 from '../assets/projects/spa-col1-2.jpg'
 import spaCol2Image from '../assets/projects/spa-col2.jpg'
+import nhaKhoaCol1Image1 from '../assets/projects/nk-col1-1.jpg'
+import nhaKhoaCol1Image2 from '../assets/projects/nk-col1-2.jpg'
+import nhaKhoaCol2Image from '../assets/projects/nk-col2.jpg'
 
 export interface Project {
   number: string
@@ -26,13 +29,10 @@ export const PROJECTS: Project[] = [
   {
     number: '02',
     category: 'Personal',
-    name: 'Aura Brand Identity',
-    col1Image1:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055654_911201c5-36d9-4bc6-bac7-331adfce159f.png&w=1280&q=85',
-    col1Image2:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055723_5ceda0b8-d9c2-4665-b2e3-83ba19ba76d1.png&w=1280&q=85',
-    col2Image:
-      'https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20260412_055753_adc5dcbd-a8e6-49c0-b43a-9b030d835cea.png&w=1280&q=85',
+    name: 'Nha Khoa',
+    col1Image1: nhaKhoaCol1Image1,
+    col1Image2: nhaKhoaCol1Image2,
+    col2Image: nhaKhoaCol2Image,
   },
   {
     number: '03',
