@@ -1,11 +1,9 @@
 import FadeIn from '../components/FadeIn'
 import Magnet from '../components/Magnet'
 import ContactButton from '../components/ContactButton'
+import portraitImage from '../assets/jack-portrait.png'
 
 const NAV_LINKS = ['About', 'Price', 'Projects', 'Contact']
-
-const PORTRAIT_URL =
-  'https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png'
 
 export default function HeroSection() {
   return (
@@ -48,7 +46,7 @@ export default function HeroSection() {
         >
           <FadeIn delay={0.6} y={30}>
             <img
-              src={PORTRAIT_URL}
+              src={portraitImage}
               alt="Jack portrait"
               className="w-full select-none"
               draggable={false}
