@@ -28,33 +28,35 @@ export default function HeroSection() {
         ))}
       </FadeIn>
 
-      <div className="relative flex flex-1 flex-col justify-end">
-        <div className="overflow-hidden">
-          <FadeIn delay={0.15} y={40}>
-            <h1 className="hero-heading mt-6 w-full whitespace-nowrap text-center text-[13vw] font-black uppercase leading-none tracking-tight sm:mt-4 sm:text-[14vw] md:-mt-5 md:text-[15vw] lg:text-[16.2vw]">
-              Hi, i&apos;m Chien
-            </h1>
-          </FadeIn>
+      <div className="relative flex flex-1 flex-col justify-center">
+        <div className="relative">
+          <div className="overflow-hidden">
+            <FadeIn delay={0.15} y={40}>
+              <h1 className="hero-heading mt-6 w-full whitespace-nowrap text-center text-[13vw] font-black uppercase leading-none tracking-tight sm:mt-4 sm:text-[14vw] md:-mt-5 md:text-[15vw] lg:text-[16.2vw]">
+                Hi, i&apos;m Chien
+              </h1>
+            </FadeIn>
+          </div>
+
+          <Magnet
+            padding={80}
+            strength={3}
+            activeTransition="transform 0.3s ease-out"
+            inactiveTransition="transform 0.6s ease-in-out"
+            className="absolute left-1/2 top-full z-10 w-[186px] -translate-x-1/2 -translate-y-3/4 sm:w-[240px] md:w-[294px] lg:w-[346px]"
+          >
+            <FadeIn delay={0.6} y={30}>
+              <img
+                src={portraitImage}
+                alt="Chien portrait"
+                className="w-full select-none"
+                draggable={false}
+              />
+            </FadeIn>
+          </Magnet>
         </div>
 
-        <Magnet
-          padding={80}
-          strength={3}
-          activeTransition="transform 0.3s ease-out"
-          inactiveTransition="transform 0.6s ease-in-out"
-          className="absolute bottom-24 left-1/2 z-10 w-[93px] -translate-x-1/2 sm:bottom-28 sm:w-[120px] md:bottom-32 md:w-[147px] lg:w-[173px]"
-        >
-          <FadeIn delay={0.6} y={30}>
-            <img
-              src={portraitImage}
-              alt="Chien portrait"
-              className="w-full select-none"
-              draggable={false}
-            />
-          </FadeIn>
-        </Magnet>
-
-        <div className="flex items-end justify-between px-6 pb-7 sm:pb-8 md:px-10 md:pb-10">
+        <div className="mt-10 flex items-end justify-between px-6 pb-7 sm:mt-14 sm:pb-8 md:mt-16 md:px-10 md:pb-10">
           <FadeIn delay={0.35} y={20}>
             <p
               className="max-w-[160px] font-light uppercase tracking-wide leading-snug text-[#D7E2EA] sm:max-w-[220px] md:max-w-[260px]"

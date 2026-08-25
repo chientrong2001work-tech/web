@@ -51,16 +51,16 @@ export default function Magnet({
   }, [padding, strength])
 
   return (
-    <div
-      ref={magnetRef}
-      className={className}
-      style={{
-        transform: `translate3d(${translate.x}px, ${translate.y}px, 0)`,
-        transition: isActive ? activeTransition : inactiveTransition,
-        willChange: 'transform',
-      }}
-    >
-      {children}
+    <div ref={magnetRef} className={className}>
+      <div
+        style={{
+          transform: `translate3d(${translate.x}px, ${translate.y}px, 0)`,
+          transition: isActive ? activeTransition : inactiveTransition,
+          willChange: 'transform',
+        }}
+      >
+        {children}
+      </div>
     </div>
   )
 }
