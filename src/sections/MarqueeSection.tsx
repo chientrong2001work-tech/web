@@ -1,18 +1,29 @@
 import { useEffect, useRef, useState } from 'react'
-import { ROW_1_IMAGES, ROW_2_IMAGES } from '../data/marqueeImages'
+import { ROW_1_ITEMS, ROW_2_ITEMS, type MarqueeItem } from '../data/marqueeImages'
 
-const TRIPLED_ROW_1 = [...ROW_1_IMAGES, ...ROW_1_IMAGES, ...ROW_1_IMAGES]
-const TRIPLED_ROW_2 = [...ROW_2_IMAGES, ...ROW_2_IMAGES, ...ROW_2_IMAGES]
+const TRIPLED_ROW_1 = [...ROW_1_ITEMS, ...ROW_1_ITEMS, ...ROW_1_ITEMS]
+const TRIPLED_ROW_2 = [...ROW_2_ITEMS, ...ROW_2_ITEMS, ...ROW_2_ITEMS]
 
-function MarqueeTile({ src, alt }: { src: string; alt: string }) {
-  return (
-    <img
-      src={src}
-      alt={alt}
-      loading="lazy"
-      className="h-[270px] w-[420px] flex-shrink-0 rounded-2xl object-cover"
-    />
-  )
+function MarqueeTile({ item, alt }: { item: MarqueeItem; alt: string }) {
+  const className = 'h-[270px] w-[420px] flex-shrink-0 rounded-2xl object-cover'
+
+  if (item.type === 'video') {
+    return (
+      <video
+        className={className}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+      >
+        {item.webmSrc && <source src={item.webmSrc} type="video/webm" />}
+        <source src={item.src} type="video/mp4" />
+      </video>
+    )
+  }
+
+  return <img src={item.src} alt={alt} loading="lazy" className={className} />
 }
 
 export default function MarqueeSection() {
@@ -48,8 +59,8 @@ export default function MarqueeSection() {
             willChange: 'transform',
           }}
         >
-          {TRIPLED_ROW_1.map((src, i) => (
-            <MarqueeTile key={i} src={src} alt={`Project preview ${i + 1}`} />
+          {TRIPLED_ROW_1.map((item, i) => (
+            <MarqueeTile key={i} item={item} alt={`Project preview ${i + 1}`} />
           ))}
         </div>
 
@@ -60,8 +71,8 @@ export default function MarqueeSection() {
             willChange: 'transform',
           }}
         >
-          {TRIPLED_ROW_2.map((src, i) => (
-            <MarqueeTile key={i} src={src} alt={`Project preview ${i + 1}`} />
+          {TRIPLED_ROW_2.map((item, i) => (
+            <MarqueeTile key={i} item={item} alt={`Project preview ${i + 1}`} />
           ))}
         </div>
       </div>
