@@ -31,23 +31,23 @@ export default function HeroSection() {
       <div className="relative flex flex-1 flex-col justify-end">
         <div className="overflow-hidden">
           <FadeIn delay={0.15} y={40}>
-            <h1 className="hero-heading mt-6 w-full whitespace-nowrap text-center text-[14vw] font-black uppercase leading-none tracking-tight sm:mt-4 sm:text-[15vw] md:-mt-5 md:text-[16vw] lg:text-[17.5vw]">
-              Hi, i&apos;m
+            <h1 className="hero-heading mt-6 w-full whitespace-nowrap text-center text-[13vw] font-black uppercase leading-none tracking-tight sm:mt-4 sm:text-[14vw] md:-mt-5 md:text-[15vw] lg:text-[16.2vw]">
+              Hi, i&apos;m Chien
             </h1>
           </FadeIn>
         </div>
 
         <Magnet
-          padding={150}
+          padding={80}
           strength={3}
           activeTransition="transform 0.3s ease-out"
           inactiveTransition="transform 0.6s ease-in-out"
-          className="absolute left-1/2 top-1/2 z-10 w-[280px] -translate-x-1/2 -translate-y-1/2 sm:top-auto sm:bottom-0 sm:w-[360px] sm:translate-y-0 md:w-[440px] lg:w-[520px]"
+          className="absolute bottom-24 left-1/2 z-10 w-[93px] -translate-x-1/2 sm:bottom-28 sm:w-[120px] md:bottom-32 md:w-[147px] lg:w-[173px]"
         >
           <FadeIn delay={0.6} y={30}>
             <img
               src={portraitImage}
-              alt="Jack portrait"
+              alt="Chien portrait"
               className="w-full select-none"
               draggable={false}
             />
@@ -60,7 +60,7 @@ export default function HeroSection() {
               className="max-w-[160px] font-light uppercase tracking-wide leading-snug text-[#D7E2EA] sm:max-w-[220px] md:max-w-[260px]"
               style={{ fontSize: 'clamp(0.75rem, 1.4vw, 1.5rem)' }}
             >
-              a 3d creator driven by crafting striking and unforgettable projects
+              Providing comprehensive marketing solutions for individuals and businesses.
             </p>
           </FadeIn>
 
