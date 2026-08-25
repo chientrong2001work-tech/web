@@ -2,7 +2,10 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { useRef, type CSSProperties } from 'react'
 import FadeIn from '../components/FadeIn'
 import LiveProjectButton from '../components/LiveProjectButton'
+import ContactButton from '../components/ContactButton'
 import { PROJECTS, type Project } from '../data/projects'
+
+const FACEBOOK_URL = 'https://www.facebook.com/trongchien.hiu'
 
 interface ProjectCardProps {
   project: Project
@@ -103,6 +106,10 @@ export default function ProjectsSection() {
           />
         ))}
       </div>
+
+      <FadeIn className="relative z-10 mt-[70vh] flex justify-center sm:mt-[75vh] md:mt-[80vh]">
+        <ContactButton href={FACEBOOK_URL} />
+      </FadeIn>
     </section>
   )
 }
