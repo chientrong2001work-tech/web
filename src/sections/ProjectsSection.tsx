@@ -11,9 +11,10 @@ interface ProjectCardProps {
   project: Project
   index: number
   totalCards: number
+  showContact?: boolean
 }
 
-function ProjectCard({ project, index, totalCards }: ProjectCardProps) {
+function ProjectCard({ project, index, totalCards, showContact }: ProjectCardProps) {
   const cardRef = useRef<HTMLDivElement>(null)
   const targetScale = 1 - (totalCards - 1 - index) * 0.03
 
@@ -69,6 +70,11 @@ function ProjectCard({ project, index, totalCards }: ProjectCardProps) {
               className="w-full rounded-[40px] object-cover sm:rounded-[50px] md:rounded-[60px]"
               style={{ height: 'clamp(160px, 22vw, 340px)' }}
             />
+            {showContact && (
+              <div className="flex flex-1 items-center justify-center">
+                <ContactButton href={FACEBOOK_URL} />
+              </div>
+            )}
           </div>
           <div className="w-[60%]">
             <img
@@ -103,13 +109,10 @@ export default function ProjectsSection() {
             project={project}
             index={i}
             totalCards={PROJECTS.length}
+            showContact={i === PROJECTS.length - 1}
           />
         ))}
       </div>
-
-      <FadeIn className="relative z-10 mt-[70vh] flex justify-center sm:mt-[75vh] md:mt-[80vh]">
-        <ContactButton href={FACEBOOK_URL} />
-      </FadeIn>
     </section>
   )
 }
