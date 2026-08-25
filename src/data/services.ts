@@ -1,32 +1,32 @@
 export const SERVICES = [
   {
     number: '01',
-    name: '3D Modeling',
+    name: 'Brand Development',
     description:
-      'Creation of detailed objects, characters, or environments tailored to specific client needs, ideal for games, products, and visualizations.',
+      'Building distinctive brand identities and positioning strategies that create recognition, strengthen credibility, and establish a meaningful connection with target audiences.',
   },
   {
     number: '02',
-    name: 'Rendering',
+    name: 'Paid Advertising',
     description:
-      'High-quality, photorealistic renders that showcase designs with custom lighting, textures, and materials to bring concepts to life.',
+      'Creating and managing performance-driven advertising campaigns across digital platforms to increase reach, generate qualified leads, and drive measurable business growth.',
   },
   {
     number: '03',
-    name: 'Motion Design',
+    name: 'Content Marketing',
     description:
-      'Dynamic animations and motion graphics that add energy and storytelling to brands, products, and digital experiences.',
+      'Developing strategic content that educates, engages, and builds trust with audiences across social media, websites, and other digital channels.',
   },
   {
     number: '04',
-    name: 'Branding',
+    name: 'Social Media Marketing',
     description:
-      "Crafting cohesive visual identities -- from logos to full brand systems -- that communicate a clear and memorable presence.",
+      'Managing social media presence through creative content, community engagement, and strategic campaigns that strengthen brand awareness and foster lasting customer relationships.',
   },
   {
     number: '05',
-    name: 'Web Design',
+    name: 'Marketing Strategy',
     description:
-      'Designing clean, modern, and conversion-focused websites with attention to layout, typography, and user experience.',
+      'Developing comprehensive marketing strategies based on business goals, target audiences, and market insights to create sustainable growth and maximize marketing effectiveness.',
   },
 ]
