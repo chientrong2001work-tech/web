@@ -1,9 +1,9 @@
 import spaCol1Image1 from '../assets/projects/spa-col1-1.jpg'
 import spaCol1Image2 from '../assets/projects/spa-col1-2.jpg'
 import spaCol2Image from '../assets/projects/spa-col2.jpg'
-import nhaKhoaCol1Image1 from '../assets/projects/nk-col1-1.jpg'
-import nhaKhoaCol1Image2 from '../assets/projects/nk-col1-2.jpg'
-import nhaKhoaCol2Image from '../assets/projects/nk-col2.jpg'
+import nhaKhoaRangSu from '../assets/projects/nk-col1-1.jpg'
+import nhaKhoaKhamRangMienPhi from '../assets/projects/nk-col1-2.jpg'
+import nhaKhoaNuCuoiToaSang from '../assets/projects/nk-col2.jpg'
 
 export interface Project {
   number: string
@@ -30,9 +30,9 @@ export const PROJECTS: Project[] = [
     number: '02',
     category: 'Personal',
     name: 'Nha Khoa',
-    col1Image1: nhaKhoaCol1Image1,
-    col1Image2: nhaKhoaCol1Image2,
-    col2Image: nhaKhoaCol2Image,
+    col1Image1: nhaKhoaNuCuoiToaSang,
+    col1Image2: nhaKhoaRangSu,
+    col2Image: nhaKhoaKhamRangMienPhi,
   },
   {
     number: '03',
