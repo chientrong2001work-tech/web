@@ -1,5 +1,6 @@
 import mq1 from '../assets/marquee/mq1.jpg'
-import mq2 from '../assets/marquee/mq2.jpg'
+import mq2Mp4 from '../assets/marquee/mq2.mp4'
+import mq2Webm from '../assets/marquee/mq2.webm'
 import mq3 from '../assets/marquee/mq3.jpg'
 import mq4Webm from '../assets/marquee/mq4.webm'
 import mq4Mp4 from '../assets/marquee/mq4.mp4'
@@ -20,7 +21,7 @@ const video = (src: string, webmSrc?: string): MarqueeItem => ({
 export const MARQUEE_ITEMS: MarqueeItem[] = [
   image('https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif'),
   image(mq1),
-  image(mq2),
+  video(mq2Mp4, mq2Webm),
   image('https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif'),
   image('https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif'),
   image('https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif'),
